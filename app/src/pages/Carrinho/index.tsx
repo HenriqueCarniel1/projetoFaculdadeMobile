@@ -13,7 +13,7 @@ function Login() {
       >
         <AntDesign name="arrowleft" size={25}/>
       </Button>
-      <Text>Login</Text>
+      <Text>Carrinho</Text>
     </View>
   );
 }

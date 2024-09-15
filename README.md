@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+Aqui está uma versão adaptada da descrição do seu projeto para a versão mobile:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+# 🚀 Econobusca Mobile: Conectando Comerciantes Locais a Clientes
 
-1. Install dependencies
+## Descrição do Projeto
 
-   ```bash
-   npm install
-   ```
+O **Econobusca** é um aplicativo inovador desenvolvido como parte de um trabalho de faculdade. O objetivo é facilitar a conexão entre comerciantes locais e clientes que buscam serviços de reparo, produtos reciclados ou recondicionados. O aplicativo oferece flexibilidade para que os usuários possam definir seus próprios orçamentos e encontrar as melhores opções disponíveis.
 
-2. Start the app
+## 🌟 Diferenciais do Aplicativo
 
-   ```bash
-    npx expo start
-   ```
+O Econobusca combina a acessibilidade de plataformas como **GetNinjas** com a especialização de **Kabum**, focando em conectar consumidores de baixa renda com produtos e serviços acessíveis e sustentáveis. O aplicativo promove a economia circular ao destacar produtos reciclados e recondicionados.
 
-In the output, you'll find options to open the app in a
+## 🎯 Proposta de Valor
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Para Leigos**: Facilita a busca por produtos e serviços considerando preço, qualidade e confiabilidade.
+- **Para Pessoas de Baixa Renda**: Conecta consumidores com orçamento limitado a produtos acessíveis e sustentáveis, promovendo a reutilização e a economia circular.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🔧 Como Funciona
 
-## Get a fresh project
+1. O usuário busca o produto ou serviço desejado.
+2. A plataforma encontra as melhores opções com base no preço, qualidade e prazo de entrega.
+3. São exibidas opções de produtos reciclados ou recondicionados, quando disponíveis.
+4. O usuário pode realizar a compra ou contratação diretamente pelo aplicativo com segurança garantida.
 
-When you're ready, run:
+## 📱 Tecnologias Utilizadas no Mobile
+
+- **Tecnologias**: React Native, TypeScript
+- **GitHub Mobile**: Será disponibilizado na próxima sprint
+- **Figma Mobile**: [Clique aqui](https://www.figma.com/proto/eQqZ1iKfYeg6Q6GRKXvxs3/Untitled?node-id=236-65&node-type=FRAME&t=zHXyDM2ZRTMCRoMO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A107)
+
+## 🏗️ Arquitetura do App
+
+O aplicativo segue uma arquitetura moderna dividida em três camadas:
+
+- **Frontend**: Interface desenvolvida em React Native com TypeScript para garantir uma boa experiência do usuário.
+- **Backend**: API construída em Node.js com Express para gerenciar a lógica de negócios e o controle das rotas.
+- **Banco de Dados**: MySQL, garantindo a segurança e escalabilidade da aplicação.
+
+## 🛠️ Metodologia de Desenvolvimento
+
+- **SCRUM**: Utilizamos SCRUM para gerenciar o desenvolvimento, com sprints curtas e revisões frequentes.
+- **Kanban**: Acompanhamos as tarefas e organizamos o fluxo de trabalho usando a metodologia Kanban.
+
+## 🌍 Impacto do Econobusca
+
+O aplicativo **Econobusca Mobile** está criando um impacto positivo ao promover a economia circular e dar suporte a comunidades de baixa renda, conectando-as a comerciantes locais e produtos acessíveis.
+
+## 👥 Equipe
+
+- **Luccas Gabriel**
+- **Samuel Alves**
+- **Vinícius Vasconcelos**
+- **Gabriel Silva**
+
+---
+
+## 📂 Como Instalar e Executar o Aplicativo
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+- [Expo](https://expo.dev/)
+
+### Passos para rodar o projeto:
+
+1. Clone este repositório:
 
 ```bash
-npm run reset-project
+git clone https://github.com/HenriqueCarniel1/projetoFaculdade.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Instale as dependências do projeto:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Execute o aplicativo:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+4. Escaneie o QR Code com o aplicativo do Expo Go no seu celular.
 
-Join our community of developers creating universal apps.
+## 📚 Documentação
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Documentação do Backend](https://github.com/HenriqueCarniell/Econobusca-Backend)
+- [Figma Mobile](https://www.figma.com/proto/eQqZ1iKfYeg6Q6GRKXvxs3/Untitled?node-id=236-65&node-type=FRAME&t=zHXyDM2ZRTMCRoMO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A107)
+
+---
+
+Essa descrição está adaptada para a versão mobile do seu projeto. Se precisar de mais algum ajuste, é só avisar!

@@ -16,7 +16,6 @@ import { Feather } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { Text } from 'react-native';
 
 function Header() {
     const navigation = useNavigation();

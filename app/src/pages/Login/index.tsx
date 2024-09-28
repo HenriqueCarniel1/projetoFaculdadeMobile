@@ -1,8 +1,8 @@
 import { Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { AntDesign } from "@expo/vector-icons";
-import { Button, ContainerForm, ContainerLogin, Input, View, Title, Label, SubmitButton, LinkText, FooterContainer } from "./style";
+import { ContainerForm, ContainerLogin, Input, View, Title, Label, SubmitButton, LinkText, FooterContainer } from "./style";
 import { useState } from "react";
+import VoltarBotao from "../../components/voltarHome";
 
 function Login() {
 
@@ -15,9 +15,7 @@ function Login() {
 
   return (
     <View>
-      <Button onPress={() => navigation.navigate('home')}>
-        <AntDesign name="arrowleft" size={25} />
-      </Button>
+      <VoltarBotao rota="home"/>
 
       <ContainerLogin>
         <ContainerForm>

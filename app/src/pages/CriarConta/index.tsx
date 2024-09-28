@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Text, Alert, TouchableOpacity } from "react-native";
-import { View, Container, Title, Label, Button, ButtonText, ErrorText, Input, StyledButton } from "./style";
+import React, { useEffect, useState } from "react";
+import { Alert } from "react-native";
+import { View, Container, Title, Label, ErrorText, Input, StyledButton, ButtonText } from "./style";
 import { useNavigation } from "@react-navigation/native";
+import VoltarBotao from "../../components/voltarHome";
 
 interface FormData {
   nome: string;
@@ -20,24 +21,45 @@ const FormCreate: React.FC = () => {
 
   const [errorMessage, setErrorMessage] = useState<string>("");
 
-  const navigation = useNavigation();
-
   const handleChange = (name: keyof FormData, value: string) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (formData.senha !== formData.confirmarSenha) {
       Alert.alert("Erro", "As senhas não coincidem");
       return;
     }
-    Alert.alert("Sucesso", "Usuário criado com sucesso!");
-    setErrorMessage("");
-    navigation.navigate('home');
+
+    try {
+      const response = await fetch("http://localhost:3000/send/register/user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          RegisterName: formData.nome,
+          RegisterEmail: formData.email,
+          RegisterPassword: formData.senha,
+        }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+    } catch (error) {
+      console.error(error);
+    }
+
+    useEffect(() => {
+        handleSubmit();
+    })
   };
 
   return (
     <View>
+    <VoltarBotao rota="home"/>
+
       <Container>
         <Title>Criar Conta</Title>
 
@@ -77,7 +99,6 @@ const FormCreate: React.FC = () => {
         <StyledButton onPress={handleSubmit}>
           <ButtonText>Criar Conta</ButtonText>
         </StyledButton>
-
       </Container>
     </View>
   );

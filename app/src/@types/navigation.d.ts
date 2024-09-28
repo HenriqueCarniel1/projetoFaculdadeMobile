@@ -3,6 +3,7 @@ namespace ReactNavigation {
       home: undefined;
       login: undefined;
       carrinho: undefined;
+      criarConta: undefined;
     }
   }
 

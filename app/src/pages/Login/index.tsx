@@ -42,7 +42,7 @@ function Login() {
               <LinkText>Esqueceu a senha?</LinkText>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity onPress={() => {navigation.navigate('criarConta')}}>
               <LinkText>Não possui conta? Crie uma</LinkText>
             </TouchableOpacity>
           </FooterContainer>
